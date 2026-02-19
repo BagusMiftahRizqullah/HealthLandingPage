@@ -3,10 +3,6 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   compress: true,
   reactStrictMode: true,
-  experimental: {
-    turbo: true,
-    optimizeCss: true
-  },
   images: {
     remotePatterns: [
       {
@@ -53,4 +49,3 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
-

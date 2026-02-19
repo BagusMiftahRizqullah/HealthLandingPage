@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+
+Host: https://www.mounjaroweightclinic.com
+Sitemap: https://www.mounjaroweightclinic.com/sitemap.xml
