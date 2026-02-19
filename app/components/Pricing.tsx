@@ -69,7 +69,7 @@ export const Pricing = ({ content }: PricingProps) => {
                   type="button"
                   className={`inline-flex w-full items-center justify-center rounded-full px-4 py-2 text-sm font-semibold transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white group-hover:-translate-y-0.5 ${
                     tier.highlight
-                      ? "bg-accent text-white shadow-soft hover:bg-emerald-400 focus-visible:ring-accent"
+                      ? "bg-accent text-white shadow-soft hover:bg-primaryStrong focus-visible:ring-accent"
                       : "border border-slate-200 bg-white text-navy hover:border-accent hover:text-accent focus-visible:ring-accent"
                   }`}
                 >

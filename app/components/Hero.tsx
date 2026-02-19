@@ -17,34 +17,34 @@ const fadeInUp = {
 export const Hero = ({ content }: HeroProps) => {
   return (
     <section
-      className="section-padding flex min-h-screen items-center bg-gradient-to-b from-emerald-500 via-emerald-600 to-emerald-600"
+      className="section-padding flex min-h-screen items-center bg-[linear-gradient(to_bottom,_#3ccf93_0%,_#dff7ee_90%)]"
       aria-labelledby="hero-title"
     >
       <div className="container-max grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
         <motion.div
-          className="space-y-6 text-white"
+          className="space-y-6 text-navy"
           initial="hidden"
           animate="visible"
           transition={{ duration: 0.7, ease: "easeOut" }}
           variants={fadeInUp}
         >
-          <div className="inline-flex items-center gap-2 rounded-full bg-emerald-700/80 px-3 py-1 text-xs font-medium text-emerald-100">
+          <div className="inline-flex items-center gap-2 rounded-full bg-primaryStrong/80 px-3 py-1 text-xs font-medium text-emerald-100">
             <span className="h-1.5 w-1.5 rounded-full bg-accent" />
             <span>{content.eyebrow}</span>
           </div>
           <h1
             id="hero-title"
-            className="text-balance text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl"
+            className="text-balance text-3xl font-semibold tracking-tight text-navy sm:text-4xl lg:text-5xl"
           >
             {content.title}
           </h1>
-          <p className="max-w-xl text-sm leading-relaxed text-emerald-100 sm:text-base">
+          <p className="max-w-xl text-sm leading-relaxed text-navy/80 sm:text-base">
             {content.subtitle}
           </p>
           <div className="flex flex-wrap items-center gap-3">
             <Link
               href="#order"
-              className="inline-flex items-center justify-center rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white shadow-soft transition-transform duration-200 hover:-translate-y-0.5 hover:bg-emerald-400 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+              className="inline-flex items-center justify-center rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white shadow-soft transition-transform duration-200 hover:-translate-y-0.5 hover:bg-primaryStrong hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-white"
             >
               {content.primaryCta}
             </Link>
@@ -55,7 +55,7 @@ export const Hero = ({ content }: HeroProps) => {
               {content.secondaryCta}
             </Link>
           </div>
-          <p className="text-xs text-emerald-100/80">{content.disclaimer}</p>
+          <p className="text-xs text-navy/70">{content.disclaimer}</p>
           <div className="mt-4 flex flex-wrap items-center gap-2">
             {content.trustBar.map((item) => (
               <div key={item.label} className="pill">

@@ -10,7 +10,10 @@ const config: Config = {
     extend: {
       colors: {
         navy: "#0f1f3d",
-        accent: "#38cd92"
+        primary: "#3ccf93",
+        primarySoft: "#e9faf3",
+        primaryStrong: "#1c8a5e",
+        accent: "#3ccf93"
       },
       borderRadius: {
         xl: "1rem"

@@ -132,7 +132,7 @@ export const OrderForm = ({ content }: OrderFormProps) => {
             <button
               type="submit"
               disabled={!consent}
-              className="inline-flex w-full items-center justify-center rounded-full bg-accent px-4 py-2.5 text-sm font-semibold text-white shadow-soft transition hover:bg-emerald-400 disabled:cursor-not-allowed disabled:bg-slate-300"
+              className="inline-flex w-full items-center justify-center rounded-full bg-accent px-4 py-2.5 text-sm font-semibold text-white shadow-soft transition hover:bg-primaryStrong disabled:cursor-not-allowed disabled:bg-slate-300"
             >
               {content.form.submit}
             </button>

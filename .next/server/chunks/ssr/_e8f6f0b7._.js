@@ -44,7 +44,7 @@ const Navbar = ({ lang, onLangChange, content })=>{
                         className: "flex items-center gap-2",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex h-9 w-9 items-center justify-center rounded-full bg-accent text-xs font-semibold text-white",
+                                className: "flex h-9 w-9 items-center justify-center rounded-full bg-accent text-xs font-bold text-white",
                                 children: "MC"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Navbar.tsx",
@@ -52,7 +52,7 @@ const Navbar = ({ lang, onLangChange, content })=>{
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: `text-sm font-semibold tracking-tight ${isScrolled ? "text-navy" : "text-white"}`,
+                                className: `text-sm font-bold tracking-tight ${isScrolled ? "text-navy" : "text-white"}`,
                                 children: content.logo
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Navbar.tsx",
@@ -67,7 +67,7 @@ const Navbar = ({ lang, onLangChange, content })=>{
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         type: "button",
-                        className: `inline-flex items-center justify-center rounded-md p-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-white lg:hidden ${isScrolled ? "text-slate-700 hover:bg-slate-100" : "text-white hover:bg-white/10"}`,
+                        className: `inline-flex items-center justify-center rounded-md p-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-white lg:hidden ${isScrolled ? "text-navy hover:bg-slate-100" : "text-white hover:bg-white/10"}`,
                         "aria-label": "Toggle navigation",
                         "aria-expanded": isOpen,
                         onClick: handleToggle,
@@ -109,20 +109,20 @@ const Navbar = ({ lang, onLangChange, content })=>{
                         className: "hidden items-center gap-8 lg:flex",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                className: `flex items-center gap-6 text-sm font-medium ${isScrolled ? "text-slate-700" : "text-white"}`,
+                                className: "flex items-center gap-6 text-sm font-medium",
                                 children: content.nav.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                             href: item.href,
-                                            className: "transition-colors hover:text-accent",
+                                            className: `transition-colors ${isScrolled ? "font-medium text-navy hover:text-primaryStrong" : "font-bold text-white hover:text-navy"}`,
                                             children: item.label
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Navbar.tsx",
-                                            lineNumber: 92,
+                                            lineNumber: 88,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, item.href, false, {
                                         fileName: "[project]/app/components/Navbar.tsx",
-                                        lineNumber: 91,
+                                        lineNumber: 87,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)))
                             }, void 0, false, {
@@ -134,14 +134,14 @@ const Navbar = ({ lang, onLangChange, content })=>{
                                 className: "flex items-center gap-3",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: `inline-flex items-center gap-1 rounded-full px-1 py-0.5 text-xs ${isScrolled ? "border border-slate-200 bg-slate-50 text-slate-700" : "border border-emerald-200/60 bg-emerald-800/40 text-emerald-50"}`,
+                                        className: `inline-flex items-center gap-1 rounded-full px-1 py-0.5 text-xs ${isScrolled ? "border border-slate-200 bg-slate-50 text-navy" : "border border-primarySoft bg-primaryStrong/40 text-emerald-50"}`,
                                         "aria-label": content.languageLabel,
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                 type: "button",
                                                 onClick: ()=>handleLangClick("en"),
                                                 "aria-pressed": lang === "en",
-                                                className: `rounded-full px-2 py-1 transition ${lang === "en" ? "bg-white text-navy shadow-sm" : isScrolled ? "text-slate-500 hover:text-navy" : "text-emerald-100 hover:text-white"}`,
+                                                className: `rounded-full px-2 py-1 transition ${lang === "en" ? "bg-white text-navy shadow-sm" : isScrolled ? "text-navy hover:text-primaryStrong" : "text-emerald-100 hover:text-white"}`,
                                                 children: "EN"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/Navbar.tsx",
@@ -152,7 +152,7 @@ const Navbar = ({ lang, onLangChange, content })=>{
                                                 type: "button",
                                                 onClick: ()=>handleLangClick("id"),
                                                 "aria-pressed": lang === "id",
-                                                className: `rounded-full px-2 py-1 transition ${lang === "id" ? "bg-white text-navy shadow-sm" : isScrolled ? "text-slate-500 hover:text-navy" : "text-emerald-100 hover:text-white"}`,
+                                                className: `rounded-full px-2 py-1 transition ${lang === "id" ? "bg-white text-navy shadow-sm" : isScrolled ? "text-navy hover:text-primaryStrong" : "text-emerald-100 hover:text-white"}`,
                                                 children: "ID"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/Navbar.tsx",
@@ -167,7 +167,7 @@ const Navbar = ({ lang, onLangChange, content })=>{
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                         href: "#order",
-                                        className: `rounded-full px-4 py-2 text-sm font-semibold shadow-soft transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-white ${isScrolled ? "bg-accent text-white hover:bg-emerald-400" : "bg-white text-accent hover:bg-slate-50"}`,
+                                        className: `rounded-full px-4 py-2 text-sm font-bold shadow-soft transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-white ${isScrolled ? "bg-accent text-navy hover:bg-primaryStrong" : "bg-white text-navy hover:bg-slate-50"}`,
                                         children: content.orderNow
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/Navbar.tsx",
@@ -257,7 +257,7 @@ const Navbar = ({ lang, onLangChange, content })=>{
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                     href: "#order",
-                                    className: "inline-flex flex-1 justify-center rounded-full bg-accent px-4 py-2 text-sm font-semibold text-white shadow-soft transition hover:bg-emerald-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-white",
+                                    className: "inline-flex flex-1 justify-center rounded-full bg-accent px-4 py-2 text-sm font-bold text-white shadow-soft transition hover:bg-primaryStrong focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-white",
                                     onClick: ()=>setIsOpen(false),
                                     children: content.orderNow
                                 }, void 0, false, {
@@ -318,13 +318,13 @@ const fadeInUp = {
 };
 const Hero = ({ content })=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "section-padding flex min-h-screen items-center bg-gradient-to-b from-emerald-500 via-emerald-600 to-emerald-600",
+        className: "section-padding flex min-h-screen items-center bg-[linear-gradient(to_bottom,_#3ccf93_0%,_#dff7ee_90%)]",
         "aria-labelledby": "hero-title",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "container-max grid items-center gap-10 lg:grid-cols-2 lg:gap-16",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                    className: "space-y-6 text-white",
+                    className: "space-y-6 text-navy",
                     initial: "hidden",
                     animate: "visible",
                     transition: {
@@ -334,7 +334,7 @@ const Hero = ({ content })=>{
                     variants: fadeInUp,
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "inline-flex items-center gap-2 rounded-full bg-emerald-700/80 px-3 py-1 text-xs font-medium text-emerald-100",
+                            className: "inline-flex items-center gap-2 rounded-full bg-primaryStrong/80 px-3 py-1 text-xs font-medium text-emerald-100",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "h-1.5 w-1.5 rounded-full bg-accent"
@@ -358,7 +358,7 @@ const Hero = ({ content })=>{
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                             id: "hero-title",
-                            className: "text-balance text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl",
+                            className: "text-balance text-3xl font-semibold tracking-tight text-navy sm:text-4xl lg:text-5xl",
                             children: content.title
                         }, void 0, false, {
                             fileName: "[project]/app/components/Hero.tsx",
@@ -366,7 +366,7 @@ const Hero = ({ content })=>{
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "max-w-xl text-sm leading-relaxed text-emerald-100 sm:text-base",
+                            className: "max-w-xl text-sm leading-relaxed text-navy/80 sm:text-base",
                             children: content.subtitle
                         }, void 0, false, {
                             fileName: "[project]/app/components/Hero.tsx",
@@ -378,7 +378,7 @@ const Hero = ({ content })=>{
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                     href: "#order",
-                                    className: "inline-flex items-center justify-center rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white shadow-soft transition-transform duration-200 hover:-translate-y-0.5 hover:bg-emerald-400 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-white",
+                                    className: "inline-flex items-center justify-center rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white shadow-soft transition-transform duration-200 hover:-translate-y-0.5 hover:bg-primaryStrong hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-white",
                                     children: content.primaryCta
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/Hero.tsx",
@@ -401,7 +401,7 @@ const Hero = ({ content })=>{
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-xs text-emerald-100/80",
+                            className: "text-xs text-navy/70",
                             children: content.disclaimer
                         }, void 0, false, {
                             fileName: "[project]/app/components/Hero.tsx",
@@ -1123,7 +1123,7 @@ const Pricing = ({ content })=>{
                                     className: "mt-auto pt-2",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         type: "button",
-                                        className: `inline-flex w-full items-center justify-center rounded-full px-4 py-2 text-sm font-semibold transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white group-hover:-translate-y-0.5 ${tier.highlight ? "bg-accent text-white shadow-soft hover:bg-emerald-400 focus-visible:ring-accent" : "border border-slate-200 bg-white text-navy hover:border-accent hover:text-accent focus-visible:ring-accent"}`,
+                                        className: `inline-flex w-full items-center justify-center rounded-full px-4 py-2 text-sm font-semibold transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white group-hover:-translate-y-0.5 ${tier.highlight ? "bg-accent text-white shadow-soft hover:bg-primaryStrong focus-visible:ring-accent" : "border border-slate-200 bg-white text-navy hover:border-accent hover:text-accent focus-visible:ring-accent"}`,
                                         children: tier.highlight ? "Most popular" : "Choose plan"
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/Pricing.tsx",
@@ -1735,7 +1735,7 @@ const OrderForm = ({ content })=>{
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 type: "submit",
                                 disabled: !consent,
-                                className: "inline-flex w-full items-center justify-center rounded-full bg-accent px-4 py-2.5 text-sm font-semibold text-white shadow-soft transition hover:bg-emerald-400 disabled:cursor-not-allowed disabled:bg-slate-300",
+                                className: "inline-flex w-full items-center justify-center rounded-full bg-accent px-4 py-2.5 text-sm font-semibold text-white shadow-soft transition hover:bg-primaryStrong disabled:cursor-not-allowed disabled:bg-slate-300",
                                 children: content.form.submit
                             }, void 0, false, {
                                 fileName: "[project]/app/components/OrderForm.tsx",
