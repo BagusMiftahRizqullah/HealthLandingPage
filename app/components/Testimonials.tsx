@@ -28,7 +28,7 @@ export const Testimonials = ({ content }: TestimonialsProps) => {
           <p className="mx-auto max-w-2xl text-sm text-slate-700 sm:text-base">
             {content.subtitle}
           </p>
-          <p className="text-xs font-medium text-emerald-700">
+          <p className="text-xs font-medium text-emerald-600">
             {content.ratingLabel}
           </p>
         </div>
@@ -42,7 +42,7 @@ export const Testimonials = ({ content }: TestimonialsProps) => {
           {content.cards.map((card) => (
             <article
               key={card.name}
-              className="flex flex-col rounded-2xl border border-slate-100 bg-white p-6 text-sm shadow-sm"
+              className="flex flex-col rounded-2xl border border-slate-100 bg-white p-6 text-sm shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-md"
             >
               <div className="mb-3 flex items-center justify-between">
                 <div>
@@ -53,7 +53,7 @@ export const Testimonials = ({ content }: TestimonialsProps) => {
                     Start weight {card.initialWeight}
                   </p>
                 </div>
-                <div className="text-right text-xs font-medium text-emerald-700">
+                <div className="text-right text-xs font-medium text-emerald-600">
                   <p>{card.weightLost}</p>
                   <p className="mt-1 text-amber-500" aria-label="5 out of 5 stars">
                     ★★★★★
@@ -70,4 +70,3 @@ export const Testimonials = ({ content }: TestimonialsProps) => {
     </section>
   );
 };
-

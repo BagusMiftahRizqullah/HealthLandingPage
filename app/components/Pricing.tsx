@@ -39,10 +39,10 @@ export const Pricing = ({ content }: PricingProps) => {
           {content.tiers.map((tier) => (
             <div
               key={tier.name}
-              className={`flex flex-col rounded-2xl border p-6 text-sm shadow-sm transition ${
+              className={`group flex flex-col rounded-2xl border p-6 text-sm shadow-sm transition-transform duration-200 ${
                 tier.highlight
-                  ? "border-accent bg-emerald-50/40 shadow-soft"
-                  : "border-slate-100 bg-white"
+                  ? "border-accent bg-emerald-50/40 shadow-soft hover:-translate-y-1 hover:shadow-lg"
+                  : "border-slate-100 bg-white hover:-translate-y-1 hover:shadow-md"
               }`}
             >
               <div className="mb-4 flex items-baseline justify-between">
@@ -67,9 +67,9 @@ export const Pricing = ({ content }: PricingProps) => {
               <div className="mt-auto pt-2">
                 <button
                   type="button"
-                  className={`inline-flex w-full items-center justify-center rounded-full px-4 py-2 text-sm font-semibold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white ${
+                  className={`inline-flex w-full items-center justify-center rounded-full px-4 py-2 text-sm font-semibold transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white group-hover:-translate-y-0.5 ${
                     tier.highlight
-                      ? "bg-accent text-white shadow-soft hover:bg-emerald-500 focus-visible:ring-accent"
+                      ? "bg-accent text-white shadow-soft hover:bg-emerald-400 focus-visible:ring-accent"
                       : "border border-slate-200 bg-white text-navy hover:border-accent hover:text-accent focus-visible:ring-accent"
                   }`}
                 >
@@ -84,4 +84,3 @@ export const Pricing = ({ content }: PricingProps) => {
     </section>
   );
 };
-

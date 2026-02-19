@@ -29,7 +29,7 @@ export const OrderForm = ({ content }: OrderFormProps) => {
     >
       <div className="container-max grid gap-10 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] lg:items-start">
         <div className="space-y-3 text-white">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-300">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-200">
             {content.eyebrow}
           </p>
           <h2
@@ -47,7 +47,7 @@ export const OrderForm = ({ content }: OrderFormProps) => {
             local emergency services.
           </p>
         </div>
-        <div className="rounded-3xl bg-white p-6 shadow-soft">
+        <div className="rounded-3xl bg-white p-6 shadow-soft transition-transform duration-200 hover:-translate-y-1 hover:shadow-xl">
           <form className="space-y-4" onSubmit={handleSubmit}>
             <div className="space-y-1">
               <label
@@ -132,12 +132,12 @@ export const OrderForm = ({ content }: OrderFormProps) => {
             <button
               type="submit"
               disabled={!consent}
-              className="inline-flex w-full items-center justify-center rounded-full bg-accent px-4 py-2.5 text-sm font-semibold text-white shadow-soft transition hover:bg-emerald-500 disabled:cursor-not-allowed disabled:bg-slate-300"
+              className="inline-flex w-full items-center justify-center rounded-full bg-accent px-4 py-2.5 text-sm font-semibold text-white shadow-soft transition hover:bg-emerald-400 disabled:cursor-not-allowed disabled:bg-slate-300"
             >
               {content.form.submit}
             </button>
             {submitted && (
-              <p className="text-xs text-emerald-700">
+              <p className="text-xs text-emerald-600">
                 {content.form.success}
               </p>
             )}
@@ -147,4 +147,3 @@ export const OrderForm = ({ content }: OrderFormProps) => {
     </section>
   );
 };
-

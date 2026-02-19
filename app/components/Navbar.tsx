@@ -103,7 +103,7 @@ export const Navbar = ({ lang, onLangChange, content }: NavbarProps) => {
               className={`inline-flex items-center gap-1 rounded-full px-1 py-0.5 text-xs ${
                 isScrolled
                   ? "border border-slate-200 bg-slate-50 text-slate-700"
-                  : "border border-emerald-300/60 bg-emerald-900/40 text-emerald-50"
+                  : "border border-emerald-200/60 bg-emerald-800/40 text-emerald-50"
               }`}
               aria-label={content.languageLabel}
             >
@@ -138,7 +138,11 @@ export const Navbar = ({ lang, onLangChange, content }: NavbarProps) => {
             </div>
             <Link
               href="#order"
-              className="rounded-full bg-accent px-4 py-2 text-sm font-semibold text-white shadow-soft transition hover:bg-emerald-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+              className={`rounded-full px-4 py-2 text-sm font-semibold shadow-soft transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-white ${
+                isScrolled
+                  ? "bg-accent text-white hover:bg-emerald-400"
+                  : "bg-white text-accent hover:bg-slate-50"
+              }`}
             >
               {content.orderNow}
             </Link>
@@ -193,7 +197,7 @@ export const Navbar = ({ lang, onLangChange, content }: NavbarProps) => {
               </div>
               <Link
                 href="#order"
-                className="inline-flex flex-1 justify-center rounded-full bg-accent px-4 py-2 text-sm font-semibold text-white shadow-soft transition hover:bg-emerald-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                className="inline-flex flex-1 justify-center rounded-full bg-accent px-4 py-2 text-sm font-semibold text-white shadow-soft transition hover:bg-emerald-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                 onClick={() => setIsOpen(false)}
               >
                 {content.orderNow}

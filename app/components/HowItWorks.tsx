@@ -38,7 +38,7 @@ export const HowItWorks = ({ content }: HowItWorksProps) => {
               key={step.title}
               className="flex flex-col rounded-2xl bg-white p-6 text-sm shadow-soft"
             >
-              <div className="mb-3 inline-flex h-8 w-8 items-center justify-center rounded-full bg-emerald-50 text-xs font-semibold text-accent">
+              <div className="mb-3 inline-flex h-8 w-8 items-center justify-center rounded-full bg-emerald-100 text-xs font-semibold text-accent">
                 {index + 1}
               </div>
               <h3 className="mb-2 text-sm font-semibold text-navy">
@@ -54,4 +54,3 @@ export const HowItWorks = ({ content }: HowItWorksProps) => {
     </section>
   );
 };
-

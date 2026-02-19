@@ -17,7 +17,7 @@ const fadeInUp = {
 export const Hero = ({ content }: HeroProps) => {
   return (
     <section
-      className="section-padding flex min-h-screen items-center bg-gradient-to-b from-emerald-900 via-emerald-800 to-emerald-700"
+      className="section-padding flex min-h-screen items-center bg-gradient-to-b from-emerald-500 via-emerald-600 to-emerald-600"
       aria-labelledby="hero-title"
     >
       <div className="container-max grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
@@ -28,7 +28,7 @@ export const Hero = ({ content }: HeroProps) => {
           transition={{ duration: 0.7, ease: "easeOut" }}
           variants={fadeInUp}
         >
-          <div className="inline-flex items-center gap-2 rounded-full bg-emerald-800/80 px-3 py-1 text-xs font-medium text-emerald-100">
+          <div className="inline-flex items-center gap-2 rounded-full bg-emerald-700/80 px-3 py-1 text-xs font-medium text-emerald-100">
             <span className="h-1.5 w-1.5 rounded-full bg-accent" />
             <span>{content.eyebrow}</span>
           </div>
@@ -44,13 +44,13 @@ export const Hero = ({ content }: HeroProps) => {
           <div className="flex flex-wrap items-center gap-3">
             <Link
               href="#order"
-              className="inline-flex items-center justify-center rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white shadow-soft transition hover:bg-emerald-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+              className="inline-flex items-center justify-center rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white shadow-soft transition-transform duration-200 hover:-translate-y-0.5 hover:bg-emerald-400 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-white"
             >
               {content.primaryCta}
             </Link>
             <Link
               href="#order"
-              className="inline-flex items-center justify-center rounded-full border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-navy shadow-sm transition hover:border-accent hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+              className="inline-flex items-center justify-center rounded-full border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-navy shadow-sm transition-transform duration-200 hover:-translate-y-0.5 hover:border-accent hover:text-accent hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-white"
             >
               {content.secondaryCta}
             </Link>
@@ -71,7 +71,7 @@ export const Hero = ({ content }: HeroProps) => {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <div className="relative mx-auto h-80 w-full max-w-md overflow-hidden rounded-3xl bg-gradient-to-br from-navy via-slate-900 to-emerald-700 shadow-soft">
+          <div className="relative mx-auto h-80 w-full max-w-md overflow-hidden rounded-3xl bg-gradient-to-br from-navy via-slate-900 to-emerald-600 shadow-soft">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.16),_transparent_60%)]" />
             <div className="relative flex h-full flex-col justify-between p-6">
               <div className="space-y-2 text-white">

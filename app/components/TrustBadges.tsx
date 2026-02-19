@@ -25,7 +25,7 @@ export const TrustBadges = ({ content }: TrustBadgesProps) => {
           {content.badges.map((badge) => (
             <div
               key={badge.label}
-              className="flex flex-col rounded-2xl bg-white px-4 py-3 text-sm shadow-sm"
+              className="flex flex-col rounded-2xl bg-white px-4 py-3 text-sm shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-md"
             >
               <span className="font-semibold text-navy">{badge.label}</span>
               {badge.description && (
@@ -38,4 +38,3 @@ export const TrustBadges = ({ content }: TrustBadgesProps) => {
     </section>
   );
 };
-
